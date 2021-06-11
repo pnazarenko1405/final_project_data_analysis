@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_16b2083b0ca74eaca83377014851a753 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_16b2083b0ca74eaca83377014851a753" ></div>
+        
+</body>
+<script>    
+    
+            var map_16b2083b0ca74eaca83377014851a753 = L.map(
+                "map_16b2083b0ca74eaca83377014851a753",
+                {
+                    center: [-34.9281805, 138.5999312],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_165e55c96735460a92ff737a9110300f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_16b2083b0ca74eaca83377014851a753);
+        
+    
+            var marker_cluster_065f36d9767d4ff888c7c88712aff6ca = L.markerClusterGroup(
+                {}
+            );
+            map_16b2083b0ca74eaca83377014851a753.addLayer(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+            var circle_marker_668ef9c41b0848abb9ca01d7d2df2530 = L.circleMarker(
+                [-34.9281805, 138.5999312],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_d080cda7a0ac4746895854b5e52fef05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31608ecedd0c456b85c07dd0360e3fe9 = $(`<div id="html_31608ecedd0c456b85c07dd0360e3fe9" style="width: 100.0%; height: 100.0%;">Place: Adelaide,  Adelaide City Council,  South Australia Crimes: 2957</div>`)[0];
+            popup_d080cda7a0ac4746895854b5e52fef05.setContent(html_31608ecedd0c456b85c07dd0360e3fe9);
+        
+
+        circle_marker_668ef9c41b0848abb9ca01d7d2df2530.bindPopup(popup_d080cda7a0ac4746895854b5e52fef05)
+        ;
+
+        
+    
+    
+            var circle_marker_a84d7f048ec34fd18b515f9b2ec914dc = L.circleMarker(
+                [-35.1207525, 138.5239735],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_7dbb457baf04431e940f26be6018b74a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_693f0fb4bf2f48b1a72fc8dfa66b4c45 = $(`<div id="html_693f0fb4bf2f48b1a72fc8dfa66b4c45" style="width: 100.0%; height: 100.0%;">Place: Morphett Vale,  Adelaide,  City of Onkaparinga Crimes: 1302</div>`)[0];
+            popup_7dbb457baf04431e940f26be6018b74a.setContent(html_693f0fb4bf2f48b1a72fc8dfa66b4c45);
+        
+
+        circle_marker_a84d7f048ec34fd18b515f9b2ec914dc.bindPopup(popup_7dbb457baf04431e940f26be6018b74a)
+        ;
+
+        
+    
+    
+            var circle_marker_2c50145deea64980ae59a800cca3cca1 = L.circleMarker(
+                [-35.1309451, 139.2651638],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_c193aeb48b2d41d0ac1a443b40f251f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ad5c1ed1bd54071ac52e1b17caee6b5 = $(`<div id="html_4ad5c1ed1bd54071ac52e1b17caee6b5" style="width: 100.0%; height: 100.0%;">Place: Murray Bridge,  The Rural City of Murray Bridge,  South Australia Crimes: 1132</div>`)[0];
+            popup_c193aeb48b2d41d0ac1a443b40f251f6.setContent(html_4ad5c1ed1bd54071ac52e1b17caee6b5);
+        
+
+        circle_marker_2c50145deea64980ae59a800cca3cca1.bindPopup(popup_c193aeb48b2d41d0ac1a443b40f251f6)
+        ;
+
+        
+    
+    
+            var circle_marker_918cdf0debbc4b8592146606d4468065 = L.circleMarker(
+                [-34.7640516, 138.6418765],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_9ff8aff02f0f46c69f3fbf9b946c2bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e2db06aa80c4dd88f483e233bd20422 = $(`<div id="html_3e2db06aa80c4dd88f483e233bd20422" style="width: 100.0%; height: 100.0%;">Place: Salisbury,  Adelaide,  City of Salisbury Crimes: 1102</div>`)[0];
+            popup_9ff8aff02f0f46c69f3fbf9b946c2bd0.setContent(html_3e2db06aa80c4dd88f483e233bd20422);
+        
+
+        circle_marker_918cdf0debbc4b8592146606d4468065.bindPopup(popup_9ff8aff02f0f46c69f3fbf9b946c2bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_5e98743959344092a123594880f52a96 = L.circleMarker(
+                [-37.8246698, 140.7820067624113],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_721d84dceffb46a09d2b774dd81cb637 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b1467aa9343480da0a0342cea5c4e13 = $(`<div id="html_8b1467aa9343480da0a0342cea5c4e13" style="width: 100.0%; height: 100.0%;">Place: City of Mount Gambier,  South Australia,  5290 Crimes: 1072</div>`)[0];
+            popup_721d84dceffb46a09d2b774dd81cb637.setContent(html_8b1467aa9343480da0a0342cea5c4e13);
+        
+
+        circle_marker_5e98743959344092a123594880f52a96.bindPopup(popup_721d84dceffb46a09d2b774dd81cb637)
+        ;
+
+        
+    
+    
+            var circle_marker_6922ff6789234f4a90dc72a4563f3750 = L.circleMarker(
+                [-32.4908819, 137.7639874],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_d9b4ef0e16b046e689998fd57e341812 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee90e0f26ec54083bcd4eecd18bd67d2 = $(`<div id="html_ee90e0f26ec54083bcd4eecd18bd67d2" style="width: 100.0%; height: 100.0%;">Place: Port Augusta,  Port Augusta City Council,  South Australia Crimes: 1053</div>`)[0];
+            popup_d9b4ef0e16b046e689998fd57e341812.setContent(html_ee90e0f26ec54083bcd4eecd18bd67d2);
+        
+
+        circle_marker_6922ff6789234f4a90dc72a4563f3750.bindPopup(popup_d9b4ef0e16b046e689998fd57e341812)
+        ;
+
+        
+    
+    
+            var circle_marker_302d35ffede0472e83fb816901bd3216 = L.circleMarker(
+                [-34.7284175, 135.8563199414681],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_6e2e6f7a0b2b4e67b13bfe40a2a869fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a66dfe6093e4543bd168a21bf406a0b = $(`<div id="html_2a66dfe6093e4543bd168a21bf406a0b" style="width: 100.0%; height: 100.0%;">Place: City of Port Lincoln,  South Australia,  5606 Crimes: 1050</div>`)[0];
+            popup_6e2e6f7a0b2b4e67b13bfe40a2a869fa.setContent(html_2a66dfe6093e4543bd168a21bf406a0b);
+        
+
+        circle_marker_302d35ffede0472e83fb816901bd3216.bindPopup(popup_6e2e6f7a0b2b4e67b13bfe40a2a869fa)
+        ;
+
+        
+    
+    
+            var circle_marker_50048ed1f9e8463f92afa56f8e715ac7 = L.circleMarker(
+                [-34.7202612, 138.6693371],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_f4773e9214b540aaa77f6969dbf157f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cfb892b6b8a4a03817ac2fb0bb4152f = $(`<div id="html_8cfb892b6b8a4a03817ac2fb0bb4152f" style="width: 100.0%; height: 100.0%;">Place: Elizabeth,  Adelaide,  City of Playford Crimes: 966</div>`)[0];
+            popup_f4773e9214b540aaa77f6969dbf157f0.setContent(html_8cfb892b6b8a4a03817ac2fb0bb4152f);
+        
+
+        circle_marker_50048ed1f9e8463f92afa56f8e715ac7.bindPopup(popup_f4773e9214b540aaa77f6969dbf157f0)
+        ;
+
+        
+    
+    
+            var circle_marker_6a8bd3913259401d976b12c64acff208 = L.circleMarker(
+                [-34.8827359, 138.5928622],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_bf1df0c3d0b24d7c818a7c95187a772e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc46d57229d549e698ec3c7c91ae90ab = $(`<div id="html_dc46d57229d549e698ec3c7c91ae90ab" style="width: 100.0%; height: 100.0%;">Place: Prospect,  Adelaide,  City of Prospect Crimes: 882</div>`)[0];
+            popup_bf1df0c3d0b24d7c818a7c95187a772e.setContent(html_dc46d57229d549e698ec3c7c91ae90ab);
+        
+
+        circle_marker_6a8bd3913259401d976b12c64acff208.bindPopup(popup_bf1df0c3d0b24d7c818a7c95187a772e)
+        ;
+
+        
+    
+    
+            var circle_marker_be45456070fd4a36a2e2c6857ef72310 = L.circleMarker(
+                [-34.8596902, 138.5855855],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_9f65a8dbb93940bea8709353d4aeb83c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed8e3c6a37994df3915abceecd212053 = $(`<div id="html_ed8e3c6a37994df3915abceecd212053" style="width: 100.0%; height: 100.0%;">Place: Kilburn,  Adelaide,  City of Port Adelaide Enfield Crimes: 861</div>`)[0];
+            popup_9f65a8dbb93940bea8709353d4aeb83c.setContent(html_ed8e3c6a37994df3915abceecd212053);
+        
+
+        circle_marker_be45456070fd4a36a2e2c6857ef72310.bindPopup(popup_9f65a8dbb93940bea8709353d4aeb83c)
+        ;
+
+        
+    
+    
+            var circle_marker_c85fedb633cc4a38a5f8f9a18c2859c3 = L.circleMarker(
+                [-35.0066862, 138.544563],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_511f608f78a24dabb9632e049fafb481 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f1e094fc20e4b66aa84d1f05e6f6802 = $(`<div id="html_4f1e094fc20e4b66aa84d1f05e6f6802" style="width: 100.0%; height: 100.0%;">Place: Oaklands Park,  Adelaide,  City of Marion Crimes: 833</div>`)[0];
+            popup_511f608f78a24dabb9632e049fafb481.setContent(html_4f1e094fc20e4b66aa84d1f05e6f6802);
+        
+
+        circle_marker_c85fedb633cc4a38a5f8f9a18c2859c3.bindPopup(popup_511f608f78a24dabb9632e049fafb481)
+        ;
+
+        
+    
+    
+            var circle_marker_d7b054f12b134f0dad80cb486dab9f3b = L.circleMarker(
+                [-34.6910694, 138.6683869],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_ed663ca7ceb04fb093bee9d0c7846d78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4577e37da2634afcaed6058b5b66df1a = $(`<div id="html_4577e37da2634afcaed6058b5b66df1a" style="width: 100.0%; height: 100.0%;">Place: Davoren Park,  Adelaide,  City of Playford Crimes: 832</div>`)[0];
+            popup_ed663ca7ceb04fb093bee9d0c7846d78.setContent(html_4577e37da2634afcaed6058b5b66df1a);
+        
+
+        circle_marker_d7b054f12b134f0dad80cb486dab9f3b.bindPopup(popup_ed663ca7ceb04fb093bee9d0c7846d78)
+        ;
+
+        
+    
+    
+            var circle_marker_27cf034b88a9484ea9ef7fe74b62c2cf = L.circleMarker(
+                [-33.03115605000001, 137.52069206351743],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_434ac5edc9d04b3cb7c17733ef9bb28b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fd453a7b12b4f299de55d6d458c03f6 = $(`<div id="html_0fd453a7b12b4f299de55d6d458c03f6" style="width: 100.0%; height: 100.0%;">Place: Whyalla Stuart,  The Corporation of the City of Whyalla,  South Australia Crimes: 818</div>`)[0];
+            popup_434ac5edc9d04b3cb7c17733ef9bb28b.setContent(html_0fd453a7b12b4f299de55d6d458c03f6);
+        
+
+        circle_marker_27cf034b88a9484ea9ef7fe74b62c2cf.bindPopup(popup_434ac5edc9d04b3cb7c17733ef9bb28b)
+        ;
+
+        
+    
+    
+            var circle_marker_ffcd2730a1e94be287c573a538befd24 = L.circleMarker(
+                [-34.6848432, 138.686233],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_f552921e9d5342689207fb197d2a7df3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d21bd87f97dd4a708b0ba9653b4a3b57 = $(`<div id="html_d21bd87f97dd4a708b0ba9653b4a3b57" style="width: 100.0%; height: 100.0%;">Place: Smithfield,  Adelaide,  City of Playford Crimes: 817</div>`)[0];
+            popup_f552921e9d5342689207fb197d2a7df3.setContent(html_d21bd87f97dd4a708b0ba9653b4a3b57);
+        
+
+        circle_marker_ffcd2730a1e94be287c573a538befd24.bindPopup(popup_f552921e9d5342689207fb197d2a7df3)
+        ;
+
+        
+    
+    
+            var circle_marker_fa84903977e7412bb5c20cbfef6b317e = L.circleMarker(
+                [-34.7570514, 138.6081109],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_3630ecd364b84f979e307a6a043dc22c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b6e33c9fa6f4378abecfced42eaed93 = $(`<div id="html_0b6e33c9fa6f4378abecfced42eaed93" style="width: 100.0%; height: 100.0%;">Place: Paralowie,  Adelaide,  City of Salisbury Crimes: 813</div>`)[0];
+            popup_3630ecd364b84f979e307a6a043dc22c.setContent(html_0b6e33c9fa6f4378abecfced42eaed93);
+        
+
+        circle_marker_fa84903977e7412bb5c20cbfef6b317e.bindPopup(popup_3630ecd364b84f979e307a6a043dc22c)
+        ;
+
+        
+    
+    
+            var circle_marker_3dc882f5d1c947948d0a3d23192772b4 = L.circleMarker(
+                [-34.8104796, 138.6111791],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_41f4c09f5cf448eb9d64e9477d0c8afe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a6e22a57ab54c119e73d2def36d8313 = $(`<div id="html_5a6e22a57ab54c119e73d2def36d8313" style="width: 100.0%; height: 100.0%;">Place: Mawson Lakes,  Adelaide,  City of Salisbury Crimes: 811</div>`)[0];
+            popup_41f4c09f5cf448eb9d64e9477d0c8afe.setContent(html_5a6e22a57ab54c119e73d2def36d8313);
+        
+
+        circle_marker_3dc882f5d1c947948d0a3d23192772b4.bindPopup(popup_41f4c09f5cf448eb9d64e9477d0c8afe)
+        ;
+
+        
+    
+    
+            var circle_marker_a088eb5ecbdb4beeb75d45f8b760d71f = L.circleMarker(
+                [-34.7825552, 138.6107321],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_a4e2ab69b726403bafd5e3d2fcb4ccf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a106b62686cd42a8a9d784333321fc45 = $(`<div id="html_a106b62686cd42a8a9d784333321fc45" style="width: 100.0%; height: 100.0%;">Place: Parafield Gardens,  Adelaide,  City of Salisbury Crimes: 795</div>`)[0];
+            popup_a4e2ab69b726403bafd5e3d2fcb4ccf5.setContent(html_a106b62686cd42a8a9d784333321fc45);
+        
+
+        circle_marker_a088eb5ecbdb4beeb75d45f8b760d71f.bindPopup(popup_a4e2ab69b726403bafd5e3d2fcb4ccf5)
+        ;
+
+        
+    
+    
+            var circle_marker_a121f459a0bc42549587a0c4aef9b8fd = L.circleMarker(
+                [-34.8338962, 138.6851156],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_e9b1db6ee0e041b9b429b4d5f8f65201 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c5af00384bd47c6a21124c0e285599b = $(`<div id="html_7c5af00384bd47c6a21124c0e285599b" style="width: 100.0%; height: 100.0%;">Place: Modbury,  Adelaide,  City of Tea Tree Gully Crimes: 705</div>`)[0];
+            popup_e9b1db6ee0e041b9b429b4d5f8f65201.setContent(html_7c5af00384bd47c6a21124c0e285599b);
+        
+
+        circle_marker_a121f459a0bc42549587a0c4aef9b8fd.bindPopup(popup_e9b1db6ee0e041b9b429b4d5f8f65201)
+        ;
+
+        
+    
+    
+            var circle_marker_2af416b6cc6443d39ae28182f98cd54e = L.circleMarker(
+                [-34.8342755, 138.5123548],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_45fd73323a014339ae5e3d25a76de76b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89aa58f60abd4b48a67a262bd3fb9ef3 = $(`<div id="html_89aa58f60abd4b48a67a262bd3fb9ef3" style="width: 100.0%; height: 100.0%;">Place: Port Adelaide,  Adelaide,  City of Port Adelaide Enfield Crimes: 691</div>`)[0];
+            popup_45fd73323a014339ae5e3d25a76de76b.setContent(html_89aa58f60abd4b48a67a262bd3fb9ef3);
+        
+
+        circle_marker_2af416b6cc6443d39ae28182f98cd54e.bindPopup(popup_45fd73323a014339ae5e3d25a76de76b)
+        ;
+
+        
+    
+    
+            var circle_marker_fea6b4e5a9f34cf28d677fadbbc98d21 = L.circleMarker(
+                [-34.7411213, 138.6564373],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_8123be9893c54c66af9a115f179d1a37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16830c349a3844b8bee37562451dc908 = $(`<div id="html_16830c349a3844b8bee37562451dc908" style="width: 100.0%; height: 100.0%;">Place: Elizabeth South,  Adelaide,  City of Playford Crimes: 682</div>`)[0];
+            popup_8123be9893c54c66af9a115f179d1a37.setContent(html_16830c349a3844b8bee37562451dc908);
+        
+
+        circle_marker_fea6b4e5a9f34cf28d677fadbbc98d21.bindPopup(popup_8123be9893c54c66af9a115f179d1a37)
+        ;
+
+        
+    
+    
+            var circle_marker_dfc12a60a0a24427ae892efc7b63024d = L.circleMarker(
+                [-34.7717678, 138.6243416],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_7698570a7e834d86a147cd5280b16fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c056756ee96645138ec9099c892aa83e = $(`<div id="html_c056756ee96645138ec9099c892aa83e" style="width: 100.0%; height: 100.0%;">Place: Salisbury Downs,  Adelaide,  City of Salisbury Crimes: 666</div>`)[0];
+            popup_7698570a7e834d86a147cd5280b16fd8.setContent(html_c056756ee96645138ec9099c892aa83e);
+        
+
+        circle_marker_dfc12a60a0a24427ae892efc7b63024d.bindPopup(popup_7698570a7e834d86a147cd5280b16fd8)
+        ;
+
+        
+    
+    
+            var circle_marker_dea5ddfb0efd4438bf6a01054c29cc78 = L.circleMarker(
+                [-34.8592373, 138.5965433],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_4e9b61e2587c4a008dd182f4736dcfcd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64017aa5d17942f497442a8194cc0c0a = $(`<div id="html_64017aa5d17942f497442a8194cc0c0a" style="width: 100.0%; height: 100.0%;">Place: Blair Athol,  Adelaide,  City of Port Adelaide Enfield Crimes: 622</div>`)[0];
+            popup_4e9b61e2587c4a008dd182f4736dcfcd.setContent(html_64017aa5d17942f497442a8194cc0c0a);
+        
+
+        circle_marker_dea5ddfb0efd4438bf6a01054c29cc78.bindPopup(popup_4e9b61e2587c4a008dd182f4736dcfcd)
+        ;
+
+        
+    
+    
+            var circle_marker_b6def733d6a9496ebcaa79582dcdb2fc = L.circleMarker(
+                [-34.745959, 138.6276437],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_276c1454e2264853b5e012292c030e7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01a2b28bc8404fefb8b6f6ca51ad0fac = $(`<div id="html_01a2b28bc8404fefb8b6f6ca51ad0fac" style="width: 100.0%; height: 100.0%;">Place: Salisbury North,  Adelaide,  City of Salisbury Crimes: 620</div>`)[0];
+            popup_276c1454e2264853b5e012292c030e7c.setContent(html_01a2b28bc8404fefb8b6f6ca51ad0fac);
+        
+
+        circle_marker_b6def733d6a9496ebcaa79582dcdb2fc.bindPopup(popup_276c1454e2264853b5e012292c030e7c)
+        ;
+
+        
+    
+    
+            var circle_marker_0ffb834967644d36bf80f685322e1319 = L.circleMarker(
+                [-35.1395801, 138.4697587],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_00fdb7d280aa4a4ab5a9dd4c6bf7e29e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_912f746ff8f046f2aaac47c06a5040af = $(`<div id="html_912f746ff8f046f2aaac47c06a5040af" style="width: 100.0%; height: 100.0%;">Place: Christies Beach,  Adelaide,  City of Onkaparinga Crimes: 616</div>`)[0];
+            popup_00fdb7d280aa4a4ab5a9dd4c6bf7e29e.setContent(html_912f746ff8f046f2aaac47c06a5040af);
+        
+
+        circle_marker_0ffb834967644d36bf80f685322e1319.bindPopup(popup_00fdb7d280aa4a4ab5a9dd4c6bf7e29e)
+        ;
+
+        
+    
+    
+            var circle_marker_245000bd517c46adbd31c3c303b2af41 = L.circleMarker(
+                [-34.893357, 138.5129598],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_1c7b8560cbcc416f9dd47812d29ebb1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25cd2b11be0f4e72b3de49a63db33b61 = $(`<div id="html_25cd2b11be0f4e72b3de49a63db33b61" style="width: 100.0%; height: 100.0%;">Place: Seaton,  Adelaide,  City of Charles Sturt Crimes: 608</div>`)[0];
+            popup_1c7b8560cbcc416f9dd47812d29ebb1a.setContent(html_25cd2b11be0f4e72b3de49a63db33b61);
+        
+
+        circle_marker_245000bd517c46adbd31c3c303b2af41.bindPopup(popup_1c7b8560cbcc416f9dd47812d29ebb1a)
+        ;
+
+        
+    
+    
+            var circle_marker_94d2b057bea9449c97927617eaf5d03f = L.circleMarker(
+                [-34.6993155, 138.6935867],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_065f36d9767d4ff888c7c88712aff6ca);
+        
+    
+        var popup_62f776b7bfa748e0b1dbecc2340d731e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f85a3df821e404fae68bd77e9085646 = $(`<div id="html_9f85a3df821e404fae68bd77e9085646" style="width: 100.0%; height: 100.0%;">Place: Elizabeth Downs,  Adelaide,  City of Playford Crimes: 607</div>`)[0];
+            popup_62f776b7bfa748e0b1dbecc2340d731e.setContent(html_9f85a3df821e404fae68bd77e9085646);
+        
+
+        circle_marker_94d2b057bea9449c97927617eaf5d03f.bindPopup(popup_62f776b7bfa748e0b1dbecc2340d731e)
+        ;
+
+        
+    
+</script>
