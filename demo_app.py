@@ -24,23 +24,8 @@ import sqlite3
 
 
 with st.echo(code_location='below'):
-    import zipfile
-    zipFile = zipfile.ZipFile("2019-20-fullyr-data_sa_crime.csv.zip", 'r')
-    zipFile.extract('2019-20-fullyr-data_sa_crime.csv')
-    df1 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
 
-    # from sqlite3 import Error
-    #
-    #
-    # def create_connection(path):
-    #     connection = None
-    #     try:
-    #         connection = sqlite3.connect(path)
-    #         print("Connection to SQLite DB successful")
-    #     except Error as e:
-    #         print(f"The error '{e}' occurred")
-    #
-    #     return connection
+    df1 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
 
 
     st.title("Различные данные по правонарушениям в Южной Австралии за 2018-2020гг.")
@@ -61,87 +46,87 @@ with st.echo(code_location='below'):
     if st.button('Показать статистику по пригородам с наибольшим количествам правонарушений за 2019-2020гг. в виде таблицы'):
         st.dataframe(group1)
 
-    # xx1 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
-    # xx1.drop(columns=['Reported Date', 'Postcode - Incident', 'Suburb - Incident', 'Offence Level 2 Description', 'Offence Level 3 Description'])
-    # xx1.sort_values(by='Offence Level 1 Description', ascending=False)
-    # groups1 = xx1.groupby('Offence Level 1 Description', as_index=False).sum()
-    # group12 = groups1.sort_values('Offence count', ascending=False)
-    #
-    # st.write('Статистика по количеству правонарушений по первой классификации за 2019-2020гг.')
-    # fig3, ax3 = plt.subplots(figsize=(40, 20))
-    # sns.barplot(data=group12, x='Offence Level 1 Description', y='Offence count', palette='magma')
-    # plt.xlabel('Type of crime (lev1)', size=20)
-    # plt.ylabel('Offence count', size=20)
-    # plt.title('Total offence count of different crimes (lev1) 2019/2020', size=36)
-    # st.pyplot(fig3)
-    # if st.button('Показать статистику по количеству правонарушений по первой классификации за 2019-2020гг. в виде таблицы'):
-    #     st.dataframe(group12)
-    #
-    # xx2 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
-    # xx2.drop(columns=['Reported Date', 'Postcode - Incident', 'Suburb - Incident', 'Offence Level 1 Description', 'Offence Level 3 Description'])
-    # xx2.sort_values(by='Offence Level 2 Description', ascending=False)
-    # groups1_2 = xx2.groupby('Offence Level 2 Description', as_index=False).sum()
-    # group123 = groups1_2.sort_values('Offence count', ascending=False)
-    #
-    # st.write('Статистика по количеству правонарушений по второй классификации за 2019-2020гг.')
-    # fig4, ax4 = plt.subplots(figsize=(40, 20))
-    # sns.barplot(data=group123, x='Offence Level 2 Description', y='Offence count', palette='magma')
-    # plt.xlabel('Type of crime (lev2)', size=20)
-    # plt.ylabel('Offence count', size=20)
-    # plt.title('Total offence count of different crimes (lev2) 2019/2020', size=36)
-    # st.pyplot(fig4)
-    # if st.button('Показать статистику по количеству правонарушений по второй классификации за 2019-2020гг. в виде таблицы'):
-    #     st.dataframe(group123)
-    #
-    # xx3 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
-    # xx3.drop(columns=['Reported Date', 'Postcode - Incident', 'Suburb - Incident', 'Offence Level 1 Description', 'Offence Level 2 Description'])
-    # xx3.sort_values(by='Offence Level 3 Description', ascending=False)
-    # groups1_2_3 = xx3.groupby('Offence Level 3 Description', as_index=False).sum()
-    # group1234 = groups1_2_3.sort_values('Offence count', ascending=False)
-    #
-    # st.write('Статистика по количеству правонарушений по третьей классификации за 2019-2020гг.')
-    # fig5, ax5 = plt.subplots(figsize=(60, 20))
-    # sns.barplot(data=group1234, x='Offence Level 3 Description', y='Offence count', palette='magma')
-    # plt.xlabel('Type of crime (lev3)', size=20)
-    # plt.ylabel('Offence count', size=20)
-    # plt.title('Total offence count of different crimes (lev3)', size=36)
-    # st.pyplot(fig5)
-    # if st.button('Показать cтатистику по количеству правонарушений по третьей классификации за 2019-2020гг. в виде таблицы'):
-    #     st.dataframe(group1234)
-    #
-    # xx4 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
-    # xx4.drop(columns=['Postcode - Incident', 'Suburb - Incident', 'Offence Level 1 Description', 'Offence Level 2 Description', 'Offence Level 3 Description'])
-    # xx4.sort_values(by='Reported Date')
-    # groups1_2_3_4 = xx4.groupby('Reported Date', as_index=False).sum()
-    # group12345 = groups1_2_3_4.sort_values('Offence count', ascending=False)
-    #
-    # st.write('Статистика по количеству правонарушений по датам за 2019-2020гг.')
-    # fig6, ax6 = plt.subplots(figsize=(60, 20))
-    # sns.lineplot(data=group12345, x='Reported Date', y='Offence count', color='red')
-    # plt.xlabel('Date', size=20)
-    # plt.ylabel('Offence count', size=20)
-    # plt.title('Total offence count by date 01.07.19-30.06.20', size=36)
-    # st.pyplot(fig6)
-    # if st.button('Показать статистику по количеству правонарушений по датам за 2019-2020гг. в виде таблицы'):
-    #     st.dataframe(group12345)
-    #
-    #
-    # x_18_19=pd.read_csv ('2018-19-data_sa_crime.csv')
-    # x_18_19.drop(columns=['Reported Date', 'Postcode - Incident', 'Offence Level 1 Description', 'Offence Level 2 Description', 'Offence Level 3 Description'])
-    # x_18_19.sort_values(by='Suburb - Incident', ascending=False)
-    #
-    # groups_18_19 = x_18_19.groupby('Suburb - Incident', as_index=False).sum()
-    # group_18_19_1 = groups_18_19.sort_values('Offence count', ascending=False).head(15)
-    #
-    # st.write('Статистика по пригородам с наибольшим количествам правонарушений за 2018-2019гг.')
-    # fig7, ax7 = plt.subplots(figsize=(40, 20))
-    # sns.barplot(data=group_18_19_1, x='Suburb - Incident', y='Offence count', palette='magma')
-    # plt.xlabel('Suburb', size=20)
-    # plt.ylabel('Offence count in the suburb', size=20)
-    # plt.title('Total offence count of crimes in the suburbs (top 15) 2018/2019', size=36)
-    # st.pyplot(fig7)
-    # if st.button('Показать статистику по пригородам с наибольшим количествам правонарушений за 2018-2019гг. в виде таблицы'):
-    #     st.dataframe(group_18_19_1)
+    xx1 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
+    xx1.drop(columns=['Reported Date', 'Postcode - Incident', 'Suburb - Incident', 'Offence Level 2 Description', 'Offence Level 3 Description'])
+    xx1.sort_values(by='Offence Level 1 Description', ascending=False)
+    groups1 = xx1.groupby('Offence Level 1 Description', as_index=False).sum()
+    group12 = groups1.sort_values('Offence count', ascending=False)
+
+    st.write('Статистика по количеству правонарушений по первой классификации за 2019-2020гг.')
+    fig3, ax3 = plt.subplots(figsize=(40, 20))
+    sns.barplot(data=group12, x='Offence Level 1 Description', y='Offence count', palette='magma')
+    plt.xlabel('Type of crime (lev1)', size=20)
+    plt.ylabel('Offence count', size=20)
+    plt.title('Total offence count of different crimes (lev1) 2019/2020', size=36)
+    st.pyplot(fig3)
+    if st.button('Показать статистику по количеству правонарушений по первой классификации за 2019-2020гг. в виде таблицы'):
+        st.dataframe(group12)
+
+    xx2 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
+    xx2.drop(columns=['Reported Date', 'Postcode - Incident', 'Suburb - Incident', 'Offence Level 1 Description', 'Offence Level 3 Description'])
+    xx2.sort_values(by='Offence Level 2 Description', ascending=False)
+    groups1_2 = xx2.groupby('Offence Level 2 Description', as_index=False).sum()
+    group123 = groups1_2.sort_values('Offence count', ascending=False)
+
+    st.write('Статистика по количеству правонарушений по второй классификации за 2019-2020гг.')
+    fig4, ax4 = plt.subplots(figsize=(40, 20))
+    sns.barplot(data=group123, x='Offence Level 2 Description', y='Offence count', palette='magma')
+    plt.xlabel('Type of crime (lev2)', size=20)
+    plt.ylabel('Offence count', size=20)
+    plt.title('Total offence count of different crimes (lev2) 2019/2020', size=36)
+    st.pyplot(fig4)
+    if st.button('Показать статистику по количеству правонарушений по второй классификации за 2019-2020гг. в виде таблицы'):
+        st.dataframe(group123)
+
+    xx3 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
+    xx3.drop(columns=['Reported Date', 'Postcode - Incident', 'Suburb - Incident', 'Offence Level 1 Description', 'Offence Level 2 Description'])
+    xx3.sort_values(by='Offence Level 3 Description', ascending=False)
+    groups1_2_3 = xx3.groupby('Offence Level 3 Description', as_index=False).sum()
+    group1234 = groups1_2_3.sort_values('Offence count', ascending=False)
+
+    st.write('Статистика по количеству правонарушений по третьей классификации за 2019-2020гг.')
+    fig5, ax5 = plt.subplots(figsize=(60, 20))
+    sns.barplot(data=group1234, x='Offence Level 3 Description', y='Offence count', palette='magma')
+    plt.xlabel('Type of crime (lev3)', size=20)
+    plt.ylabel('Offence count', size=20)
+    plt.title('Total offence count of different crimes (lev3)', size=36)
+    st.pyplot(fig5)
+    if st.button('Показать cтатистику по количеству правонарушений по третьей классификации за 2019-2020гг. в виде таблицы'):
+        st.dataframe(group1234)
+
+    xx4 = pd.read_csv('2019-20-fullyr-data_sa_crime.csv')
+    xx4.drop(columns=['Postcode - Incident', 'Suburb - Incident', 'Offence Level 1 Description', 'Offence Level 2 Description', 'Offence Level 3 Description'])
+    xx4.sort_values(by='Reported Date')
+    groups1_2_3_4 = xx4.groupby('Reported Date', as_index=False).sum()
+    group12345 = groups1_2_3_4.sort_values('Offence count', ascending=False)
+
+    st.write('Статистика по количеству правонарушений по датам за 2019-2020гг.')
+    fig6, ax6 = plt.subplots(figsize=(60, 20))
+    sns.lineplot(data=group12345, x='Reported Date', y='Offence count', color='red')
+    plt.xlabel('Date', size=20)
+    plt.ylabel('Offence count', size=20)
+    plt.title('Total offence count by date 01.07.19-30.06.20', size=36)
+    st.pyplot(fig6)
+    if st.button('Показать статистику по количеству правонарушений по датам за 2019-2020гг. в виде таблицы'):
+        st.dataframe(group12345)
+
+
+    x_18_19=pd.read_csv ('2018-19-data_sa_crime.csv')
+    x_18_19.drop(columns=['Reported Date', 'Postcode - Incident', 'Offence Level 1 Description', 'Offence Level 2 Description', 'Offence Level 3 Description'])
+    x_18_19.sort_values(by='Suburb - Incident', ascending=False)
+
+    groups_18_19 = x_18_19.groupby('Suburb - Incident', as_index=False).sum()
+    group_18_19_1 = groups_18_19.sort_values('Offence count', ascending=False).head(15)
+
+    st.write('Статистика по пригородам с наибольшим количествам правонарушений за 2018-2019гг.')
+    fig7, ax7 = plt.subplots(figsize=(40, 20))
+    sns.barplot(data=group_18_19_1, x='Suburb - Incident', y='Offence count', palette='magma')
+    plt.xlabel('Suburb', size=20)
+    plt.ylabel('Offence count in the suburb', size=20)
+    plt.title('Total offence count of crimes in the suburbs (top 15) 2018/2019', size=36)
+    st.pyplot(fig7)
+    if st.button('Показать статистику по пригородам с наибольшим количествам правонарушений за 2018-2019гг. в виде таблицы'):
+        st.dataframe(group_18_19_1)
     #
     # x_18_19_2 = pd.read_csv('2018-19-data_sa_crime.csv')
     # x_18_19_2.drop(columns=['Reported Date', 'Postcode - Incident', 'Suburb - Incident', 'Offence Level 2 Description', 'Offence Level 3 Description'])
